@@ -10,6 +10,6 @@ def line(array)
 end
 
 def take_a_number(array, name)
-  array.each_with_index {|name, index| array << "Welcome, #{name}. You are number #{index+1} in line."}
-  puts array.join(" ")
+  array.map.each_with_index {|name, index| puts "Welcome, #{name}. You are number #{index+1} in line."}
+  return array
 end
