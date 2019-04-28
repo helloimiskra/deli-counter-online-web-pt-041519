@@ -11,9 +11,8 @@ end
 
 def take_a_number(array, name)
   if array = []
-    array.each_with_index do |name, index| 
+    array.each_with_index do |name, index|
       array << puts "Welcome, #{name}. You are number #{index+1} in line."
     end
   end
 end
-  
