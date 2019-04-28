@@ -10,9 +10,6 @@ def line(array)
 end
 
 def take_a_number(array, name)
-  if array = []
-    new_a = []
-    array.each_with_index {|name, index| new_a << "Welcome, #{name}. You are number #{index+1} in line."}
-    puts new_a.join(" ")
-  end
+  array.each_with_index {|name, index| array << "Welcome, #{name}. You are number #{index+1} in line."}
+  puts array.join(" ")
 end
