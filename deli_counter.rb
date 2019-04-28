@@ -22,4 +22,4 @@ def take_a_number(array, name)
 end
 
 def now_serving(array, name)
-  if array = 
+  if array =
