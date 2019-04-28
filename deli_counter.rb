@@ -10,6 +10,16 @@ def line(array)
 end
 
 def take_a_number(array, name)
-  array.map.each_with_index {|name, index| puts "Welcome, #{name}. You are number #{index+1} in line."}
-  return array
+  if array.empty?
+    array << name
+    array.each_with_index {|name, index| array << "Welcome, #{name}. You are number #{index+1} in line."}
+    puts array.join(" ")
+  else array.any?
+    new_arr = []
+    array.each_with_index {|name, index| new_arr << "Welcome, #{name}. You are number #{index+1} in line."}
+    puts new_arr.join(" ")
+  end
 end
+
+def now_serving(array, name)
+  if array = 
