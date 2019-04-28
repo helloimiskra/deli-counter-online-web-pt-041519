@@ -13,11 +13,11 @@ def take_a_number(array, name)
   if array.empty?
     array << name
     array.each_with_index {|name, index| array << "Welcome, #{name}. You are number #{index+1} in line."}
-    puts array.join(" ")
+    return array.join(" ")
   else array.any?
     new_arr = []
     array.each_with_index {|name, index| new_arr << "Welcome, #{name}. You are number #{index+1} in line."}
-    puts new_arr.join(" ")
+    return new_arr.join(" ")
   end
 end
 
