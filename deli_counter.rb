@@ -21,8 +21,8 @@ def take_a_number(array, name)
   end
 end
 
-def now_serving(array, name)
-  if array = []
-    puts "There is nobody waiting to be served!"
-  end
-end
+#def now_serving(array, name)
+#  if array = []
+#    puts "There is nobody waiting to be served!"
+#  end
+#end
